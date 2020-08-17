@@ -1,5 +1,5 @@
 import React from 'react';
-import '../resources/css/Header.css';
+import '../resources/css/Header.scss';
 import PersonIcon from '@material-ui/icons/Person';
 import GroupWorkSharpIcon from '@material-ui/icons/GroupWorkSharp';
 import SendSharpIcon from '@material-ui/icons/SendSharp';

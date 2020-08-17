@@ -5,24 +5,24 @@ import StarRateIcon from "@material-ui/icons/StarRate";
 import ThumbUpAltIcon from '@material-ui/icons/ThumbUpAlt';
 import FlashOnIcon from "@material-ui/icons/FlashOn";
 import IconButton from "@material-ui/core/IconButton";
-import '../resources/css/SwipeButtons.css';
+import '../resources/css/SwipeButtons.scss';
 
 const SwipeButtons = () => {
   return (
     <div className="swipeButtons">
-      <IconButton className="swipeButtons__undo">
+      <IconButton className="swipeButtons__button --undo">
         <ReplayIcon fontSize="large" />
       </IconButton>
-      <IconButton className="swipeButtons__dislike">
+      <IconButton className="swipeButtons__button --dislike">
         <ThumbDownAltIcon fontSize="large" />
       </IconButton>
-      <IconButton className="swipeButtons__boost">
+      <IconButton className="swipeButtons__button --boost">
         <StarRateIcon fontSize="large" />
       </IconButton>
-      <IconButton className="swipeButtons__like">
+      <IconButton className="swipeButtons__button --like">
         <ThumbUpAltIcon fontSize="large" />
       </IconButton>
-      <IconButton className="swipeButtons__ultralike">
+      <IconButton className="swipeButtons__button --ultralike">
         <FlashOnIcon fontSize="large" />
       </IconButton>
     </div>

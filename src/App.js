@@ -1,7 +1,8 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 import Header from './components/Header';
 import TinderCards from './components/TinderCards';
+import ChatScreen from './components/ChatScreen';
 import Chats from './components/Chats';
 import SwipeButtons from './components/SwipeButtons';
 
@@ -17,12 +18,15 @@ const App = () => {
       <Router>
       <Header/>
         <Switch>
+        <Route path="/chat/:person">
+            <ChatScreen/>
+          </Route>  
           <Route path="/chat">
             <Chats/>
           </Route>   
           <Route path="/">
            <TinderCards/>
-           <SwipeButtons/>
+            <SwipeButtons/>
           </Route>          
         </Switch>        
       </Router>      
