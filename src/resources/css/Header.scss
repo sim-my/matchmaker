@@ -1,10 +1,28 @@
+
 .header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     background: #f9f9f9;
-    .header__icon{
-        padding:20px;
+    .header__main{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
     }
+    .header__withbackbutton{
+        display: flex;
+        align-items: center;
+        position: relative;
+      }
+      h3{
+        color:rgb(73, 69, 69);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-transform: uppercase;
+      }
+    
+}
+.header__icon{
+    padding:20px;
 }
 

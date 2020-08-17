@@ -5,7 +5,7 @@ import "../resources/css/ChatScreen.scss";
 const ChatScreen = () => {
   const [messages, setmessage] = useState([
     {
-      name: "Elon",
+      name: "Elon Musk",
       id:"1",
       message: "Hey!!",
       profilePic:
@@ -25,9 +25,9 @@ const ChatScreen = () => {
   ]);
   return (
     <div className="chatScreen">
-      <h3 className="chatScreen__timestamp">
-        YOU'VE MATCHED ELON ON 10/10/2020
-      </h3>
+      <h5 className="chatScreen__timestamp">
+        YOU'VE MATCHED WITH ELON ON 10/10/2020
+      </h5>
       {messages.map((message) => (
         <div  key={message.id}>
           {message.name ? (
