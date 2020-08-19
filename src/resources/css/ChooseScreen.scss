@@ -1,0 +1,17 @@
+.chooseScreen{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background:url('../images/couple.gif') no-repeat;
+    background-size: cover;
+    .chooseScreen__card{
+        position: absolute;
+        height: 140px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        bottom:5%;
+        left:5%;
+    }
+    
+}
