@@ -34,4 +34,23 @@
 .header__icon{
     padding:20px;
 }
+.slide-pane__title-wrapper{
+  margin: 0;
+}
 
+.slide-pane__close{
+  margin: 0;
+}
+.slide-pane__title{
+  font-weight: bold !important;
+  max-width: 100% !important;
+  text-transform: uppercase;
+  text-align: center;
+  
+}
+.slide-pane__header{
+  background-color: gray;
+}
+.slide-pane__content{
+  background-color: lightgray;  
+}

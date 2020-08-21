@@ -9,6 +9,8 @@ import matchSettingsIcon from "../resources/images/matchSettings.svg";
 import likedYouIcon from "../resources/images/likedYou.svg";
 import "../resources/css/Dashboard.scss";
 import Button from "./Button";
+import SimplePopover from "./SimplePopover";
+
 
 export default class Dashboard extends Component {
   render() {
@@ -54,11 +56,15 @@ export default class Dashboard extends Component {
           </div>
         </div>
         <div className="dashboard__logout">
-        <Button className="dashboard__submit" buttonText="LOG OUT" />
+          <Button className="dashboard__submit" buttonText="LOG OUT" />
         </div>
+       <div className="dashboard__popover">         
+        <SimplePopover/>
+        <div className="dashboard__notificationCount">5</div>
+       </div>
+        
+
       </div>
-      
-      
     );
   }
 }
