@@ -21,7 +21,7 @@ const Header = ({ backbutton, name }) => {
         </div>
       ) : (
         <div className="header__main">
-          <img height="90px" src={heartLogo} />
+          <img height="80px" src={heartLogo} />
           <IconButton>
             <PersonIcon className="header__icon" color="primary" />
           </IconButton>
