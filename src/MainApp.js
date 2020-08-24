@@ -10,6 +10,7 @@ import Login from "./components/Login";
 import ChooseScreen from "./components/ChooseScreen";
 import Register from "./components/Register";
 import Dashboard from "./components/Dashboard";
+import Settings from "./components/Settings";
 
 const MainApp = () => {
   return (
@@ -37,6 +38,9 @@ const MainApp = () => {
           </Route>
           <Route path="/dashboard">
             <Dashboard />
+          </Route>
+          <Route path="/settings">
+            <Settings />
           </Route>
           <Route path="/">
             <ChooseScreen />
