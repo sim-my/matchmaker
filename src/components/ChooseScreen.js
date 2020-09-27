@@ -7,7 +7,7 @@ export default class ChooseScreen extends Component {
     return (
       <div className="chooseScreen">
         <div className="chooseScreen__card">
-        <Button className="chooseScreen__submit" buttonText="I AM ALREADY A MEMBER" />
+        <Button className="chooseScreen__submit" buttonText="ALREADY A MEMBER" />
         <Button className="chooseScreen__submit" buttonText="JOIN THE COMMUNITY" />
         </div>        
       </div>

@@ -1,0 +1,37 @@
+.checkBoxes{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    label{
+        font-size: 20px;
+        font-weight: bold;
+        color: #3f50b5;
+        padding-bottom: 10px;
+    }
+}
+
+.checkBox{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.genderItem{
+    margin-right:20px;
+    background: #fff;
+    border-radius:50%;
+    height: 70px;
+    width: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 10px 14px 16px -9px rgba(168,168,168,1);
+    img{
+        filter: grayscale(50%);
+    }
+    &.active{
+        background: rgb(193, 107, 214);
+        img{
+            filter: grayscale(0);
+        }
+    }
+}

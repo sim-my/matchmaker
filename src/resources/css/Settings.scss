@@ -1,2 +1,17 @@
+h2{
+    text-align: center;
+    color: #3f50b5;
+    margin: 20px;
+}
 .settings{
+    width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    .settings__item{
+        margin: 20px;
+    }
+    .submit__button{
+        text-align: center;
+    }
 }

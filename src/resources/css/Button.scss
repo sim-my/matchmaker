@@ -1,13 +1,20 @@
 .button {
+
     button{
+        cursor: pointer;
         color:#fff;  
         max-width: 200px;
-        background-color:#3f50b5;      
+        background-color: rgba(86, 86, 165, 0.945);      
         outline:none;
         width: 200px;
         padding:15px;
         border:none;
         border-radius: 20px;
     }
+    button:hover{
+        padding:18px;
+        background-color: rgb(206, 119, 119); 
+    }
+
 }
  
