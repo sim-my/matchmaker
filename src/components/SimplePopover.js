@@ -7,16 +7,9 @@ import NotificationsIcon from "@material-ui/icons/Notifications";
 import NotificationTab from './NotificationTab';
 import '../resources/css/SimplePopover.scss';
 
-const useStyles = makeStyles((theme) => ({
-  typography: {
-    
-  },
-}));
-
 export default function SimplePopover() {
-  const classes = useStyles();
   const [anchorEl, setAnchorEl] = React.useState(null);
-
+ 
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
@@ -27,7 +20,6 @@ export default function SimplePopover() {
 
   const open = Boolean(anchorEl);
   const id = open ? "simple-popover" : undefined;
-
   return (
     <div>
       <IconButton  className="popover__button" aria-describedby={id} onClick={handleClick}>
@@ -47,9 +39,7 @@ export default function SimplePopover() {
           horizontal: "right",
         }}
       >
-        <Typography className={classes.typography}>
           <NotificationTab/>
-        </Typography>
       </Popover>
     </div>
   );

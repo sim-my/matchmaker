@@ -2,11 +2,13 @@ import React, { Component } from "react";
 import Notification from "./Notification";
 import "../resources/css/NotificationTab.scss";
 
+
 export default class NotificationTab extends Component {
+  
+
   render() {
     return (
-      <div>
-        
+      <div>        
         <div className="notificationTab">
           <Notification
             class="active"

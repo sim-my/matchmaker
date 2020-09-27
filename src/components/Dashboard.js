@@ -10,6 +10,7 @@ import likedYouIcon from "../resources/images/likedYou.svg";
 import "../resources/css/Dashboard.scss";
 import Button from "./Button";
 import SimplePopover from "./SimplePopover";
+import SimpleModal from "./SimpleModal";
 
 
 export default class Dashboard extends Component {
@@ -17,6 +18,7 @@ export default class Dashboard extends Component {
     return (
       <div className="dashboard">
         <Header />
+        <SimpleModal/>
         <div className="dashboard__buttons">
           <div className="dashboard__button">
             <IconButton>
@@ -59,7 +61,12 @@ export default class Dashboard extends Component {
           <Button className="dashboard__submit" buttonText="LOG OUT" />
         </div>
        <div className="dashboard__popover">         
-        <SimplePopover/>
+        <SimplePopover 
+            class="active"
+            message="You and Elon just matched."
+            timestamp="1 min ago"
+            profilePic="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Elon_Musk_Royal_Society.jpg/220px-Elon_Musk_Royal_Society.jpg"
+          />
         <div className="dashboard__notificationCount">5</div>
        </div>
         
