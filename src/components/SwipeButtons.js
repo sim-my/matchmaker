@@ -8,7 +8,8 @@ import '../resources/css/SwipeButtons.scss';
 const SwipeButtons = () => {
   return (
     <div className="swipeButtons">
-     <IconButton className="swipeButtons__button --dislike">
+    <div className="beforeMatch">
+    <IconButton className="swipeButtons__button --dislike">
         <ThumbDownAltIcon fontSize="large" />
       </IconButton>
       <IconButton className="swipeButtons__button --undo">
@@ -17,6 +18,8 @@ const SwipeButtons = () => {
       <IconButton className="swipeButtons__button --like">
         <ThumbUpAltIcon fontSize="large" />
       </IconButton>
+    </div>
+     
       </div>
   );
 };
