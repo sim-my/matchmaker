@@ -39,7 +39,7 @@ export default function SimplePopover() {
           horizontal: "right",
         }}
       >
-          <NotificationTab/>
+          <NotificationTab onClick={handleClose}/>
       </Popover>
     </div>
   );

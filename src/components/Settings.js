@@ -6,14 +6,13 @@ import NumberField from "./NumberField";
 import Textarea from "./Textarea";
 import Header from "./Header";
 import Button from "./Button";
-import SimpleModal from "./SimpleModal";
+
 export default class Settings extends Component {
   render() {
     return (
 
       <div>
         <Header backbutton="/dashboard" />
-        <SimpleModal/>
         <h2>Personal Settings</h2>
         <div className="settings">
           <div className="settings__item">

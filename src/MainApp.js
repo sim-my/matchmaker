@@ -11,6 +11,7 @@ import ChooseScreen from "./components/ChooseScreen";
 import Register from "./components/Register";
 import Dashboard from "./components/Dashboard";
 import Settings from "./components/Settings";
+import PersonPage from "./components/PersonPage";
 
 const MainApp = () => {
   return (
@@ -24,6 +25,10 @@ const MainApp = () => {
           <Route path="/chat">
             <Header backbutton="/" />
             <Chats />
+          </Route>
+          <Route path="/person-page">
+          <Header backbutton="/" />
+            <PersonPage />
           </Route>
           <Route path="/login">
             <Login />
